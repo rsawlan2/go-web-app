@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-    path-ignore:
-      - "Readme.md"
+    paths-ignore:
+      - 'Readme.md'
       - 'helm/**'      
 
 jobs:
@@ -82,5 +82,5 @@ jobs:
         git config --global user.name "rsawlan2"
         git config --global user.email "roma.sawlani92@gmail.com"
         git add helm/go-web-app-chart/values.yaml
-        git commit -m "Update image tag in Helm chart"
+        git commit -m "Update image tag in Helm chart [skip ci]"
         git push
